@@ -1,0 +1,19 @@
+# Ignore everything by default.
+*
+
+# Whitelist specific files/dirs.
+!workspace/
+!workspace/**
+workspace/.openclaw/
+workspace/.openclaw/**
+!gogcli/
+gogcli/*
+!gogcli/state.json
+db/
+db/**
+!skills/
+!skills/**
+!cron/
+!cron/jobs.json
+!openclaw.json
+!.gitignore
