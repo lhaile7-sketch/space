@@ -2,7 +2,12 @@
   "groups": {
     "-1003805134407": {
       "name": "OpenClaw",
-      "topics": {}
+      "topics": {
+        "5": {
+          "name": "Daily Briefing",
+          "iconColor": 7322096
+        }
+      }
     }
   }
 }

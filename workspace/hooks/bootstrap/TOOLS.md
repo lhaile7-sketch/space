@@ -52,6 +52,7 @@ When sending messages to group topics, use these thread IDs:
 
 | Group | Topic | Thread ID |
 | ----- | ----- | --------- |
+| OpenClaw (-1003805134407) | Daily Briefing | 5 |
 
 ### Sync Rules
 
