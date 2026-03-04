@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "accounts": [
+    {
+      "id": "635ba9d2",
+      "email": "lhaile7@gmail.com",
+      "client": "personal",
+      "personal": true,
+      "services": [
+        "calendar:write",
+        "calendar:read",
+        "docs:read",
+        "gmail:read",
+        "sheets:read",
+        "drive:read"
+      ],
+      "authenticated": true
+    }
+  ]
+}

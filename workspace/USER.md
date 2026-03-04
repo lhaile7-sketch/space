@@ -1,17 +1,13 @@
 # USER.md - About Your Human
 
-_Learn about the person you're helping. Update this as you go._
-
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
+- **Name:** Lauren Haile
+- **What to call them:** Lauren
+- **Pronouns:**
+- **Timezone:** US Eastern (America/New_York)
+- **Location:** Atlanta, GA
 - **Notes:**
 
 ## Context
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
-
----
-
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+- Wants a daily briefing to start each day strong
+- Prefers straightforward communication, warm and chatty but not too sassy

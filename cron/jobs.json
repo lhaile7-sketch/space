@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "6c96ccb8-5b28-4bde-b142-cb68808ca9e7",
+      "name": "daily-briefing",
+      "description": "Morning briefing: weather, calendar, todoist",
+      "enabled": true,
+      "createdAtMs": 1772665787267,
+      "updatedAtMs": 1772665787267,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * *",
+        "tz": "UTC"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "It's 7am ET — time for Lauren's daily briefing. Do the following and send it as ONE message via the message tool (action=send, target=8633030167):\n\n1. Get Atlanta weather for today using: curl -s 'https://api.open-meteo.com/v1/forecast?latitude=33.749&longitude=-84.388&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weathercode&temperature_unit=fahrenheit&timezone=America/New_York&forecast_days=1'\n2. Get today's calendar events: gog calendar events primary --from <today>T00:00:00-04:00 --to <today>T23:59:59-04:00 --account lhaile7@gmail.com --client personal --json. Highlight any morning meetings (before noon) with a heads-up.\n3. Get Todoist tasks due today: curl -s 'https://api.todoist.com/api/v1/tasks?filter=today' -H 'Authorization: Bearer $TODOIST_API_TOKEN'\n4. Format it all into a clean, friendly morning briefing. Keep it concise but warm. Use emoji section headers. Send via message tool.",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "telegram",
+        "to": "8633030167"
+      },
+      "state": {
+        "nextRunAtMs": 1772712000000
+      }
+    }
+  ]
+}
