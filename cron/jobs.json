@@ -7,7 +7,7 @@
       "description": "Morning briefing: weather, calendar, todoist",
       "enabled": true,
       "createdAtMs": 1772665787267,
-      "updatedAtMs": 1772666171842,
+      "updatedAtMs": 1772666305298,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -27,10 +27,10 @@
       },
       "state": {
         "nextRunAtMs": 1772712000000,
-        "lastRunAtMs": 1772666043735,
+        "lastRunAtMs": 1772666276642,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 40116,
+        "lastDurationMs": 28656,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0

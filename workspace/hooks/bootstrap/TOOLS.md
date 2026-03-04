@@ -51,4 +51,5 @@ Webhook transform files must follow this convention:
 
 Configured in AlphaClaw (use `--client <client> --account <email>` for gog commands):
 
-- lhaile7@gmail.com (type: personal; client: personal; status: authenticated; services: calendar:write, calendar:read, docs:read, gmail:read, sheets:read, drive:read)
+- lhaile7@gmail.com (type: personal; client: personal; status: authenticated; services: gmail:read, sheets:read, calendar:write, drive:read, calendar:read, docs:read, gmail:write)
+- lauren.haile@superhuman.com (type: company; client: default; status: awaiting sign-in; services: gmail:read, calendar:read, calendar:write, drive:read, sheets:read, docs:read)
