@@ -7,7 +7,7 @@
       "description": "Morning briefing: weather, calendar, todoist",
       "enabled": true,
       "createdAtMs": 1772665787267,
-      "updatedAtMs": 1772668416874,
+      "updatedAtMs": 1773057633580,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -17,7 +17,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "agentTurn",
-        "message": "It's 7am ET — time for Lauren's daily briefing. Do the following and send it as ONE message via the message tool (action=send, target=-1003805134407, threadId=5):\n\n1. Get Atlanta weather for today using: curl -s 'https://api.open-meteo.com/v1/forecast?latitude=33.749&longitude=-84.388&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weathercode&temperature_unit=fahrenheit&timezone=America/New_York&forecast_days=1'\n\n2. Get today's PERSONAL calendar events: gog calendar events primary --from <today>T00:00:00-04:00 --to <today>T23:59:59-04:00 --account lhaile7@gmail.com --client personal --json. Show all events for the day.\n\n3. Get today's WORK calendar (free/busy): gog calendar events 'lauren.haile@superhuman.com' --from <today>T00:00:00-04:00 --to <today>T12:00:00-04:00 --account lhaile7@gmail.com --client personal --json. These are free/busy only (no titles). If there are any busy blocks before noon, flag them with a heads-up like '⚠️ You have X work meetings this morning' and list the time slots so she doesn't miss them.\n\n4. Get Todoist tasks from the Home project only: curl -s 'https://api.todoist.com/api/v1/tasks?project_id=6CrfMRHRfR8HcwQF' -H 'Authorization: Bearer $TODOIST_API_TOKEN' — show tasks due today, plus flag any overdue items.\n\n5. Format it all into a clean, friendly morning briefing. Keep it concise but warm. Use emoji section headers. Send via message tool.",
+        "message": "It's 7am ET — time for Lauren's daily briefing. Do the following and send it as ONE message via the message tool (action=send, target=-1003805134407, threadId=5):\n\n1. Get Atlanta weather for today using: curl -s 'https://api.open-meteo.com/v1/forecast?latitude=33.749&longitude=-84.388&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weathercode&temperature_unit=fahrenheit&timezone=America/New_York&forecast_days=1'\n\n2. Get today's PERSONAL calendar events: gog calendar events primary --from <today>T00:00:00-04:00 --to <today>T23:59:59-04:00 --account lhaile7@gmail.com --client personal --json. Show all events for the day.\n\n3. Get today's WORK calendar (free/busy): gog calendar events 'lauren.haile@superhuman.com' --from <today>T00:00:00-04:00 --to <today>T12:00:00-04:00 --account lhaile7@gmail.com --client personal --json. These are free/busy only (no titles). If there are any busy blocks before noon, flag them with a heads-up like '⚠️ You have X work meetings this morning' and list the time slots so she doesn't miss them.\n\n4. Get Todoist tasks from the Home project only: bash -c 'source /data/.env && curl -s \"https://api.todoist.com/api/v1/tasks?project_id=6CrfMRHRfR8HcwQF\" -H \"Authorization: Bearer $TODOIST_API_TOKEN\"' — show tasks due today, plus flag any overdue items.\n\n5. Format it all into a clean, friendly morning briefing. Keep it concise but warm. Use emoji section headers. Send via message tool.",
         "timeoutSeconds": 120
       },
       "delivery": {
@@ -26,11 +26,11 @@
         "to": "-1003805134407:5"
       },
       "state": {
-        "nextRunAtMs": 1772712000000,
-        "lastRunAtMs": 1772666276642,
+        "nextRunAtMs": 1773144000000,
+        "lastRunAtMs": 1773057600003,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 28656,
+        "lastDurationMs": 33577,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
