@@ -7,7 +7,7 @@
       "description": "Morning briefing: weather, calendar, todoist",
       "enabled": true,
       "createdAtMs": 1772665787267,
-      "updatedAtMs": 1773057633580,
+      "updatedAtMs": 1773230453040,
       "schedule": {
         "kind": "cron",
         "expr": "0 12 * * *",
@@ -21,16 +21,16 @@
         "timeoutSeconds": 120
       },
       "delivery": {
-        "mode": "announce",
+        "mode": "silent",
         "channel": "telegram",
         "to": "-1003805134407:5"
       },
       "state": {
-        "nextRunAtMs": 1773144000000,
-        "lastRunAtMs": 1773057600003,
+        "nextRunAtMs": 1773316800000,
+        "lastRunAtMs": 1773230400004,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 33577,
+        "lastDurationMs": 53036,
         "lastDelivered": true,
         "lastDeliveryStatus": "delivered",
         "consecutiveErrors": 0
